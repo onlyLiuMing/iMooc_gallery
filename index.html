@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="main">
+<!-- 模板开始 -->
+ <!--photo-main用来框住中间的photo所在的位置-->
+ <!-- 这层div用来让图片的角度进行变换 -->
+        <div class="" id="photo-warp">
+             <!--photo-warp用来让图片整体翻转-->
+            <div class="photo-font photo-warp photo-center"  id="photo_{{index}}"onclick="goBack(this)">
+                    <div class="photo-side photo-font" >
+                        <p class="photo-font-image"><img src="img/{{img}}"/></p>
+                        <p class="photo-font-caption">{{caption}}</p>
+                    </div>
+
+                    <div class="photo-side photo-back">
+                        <p class="photo-back-desc">{{desc}}</p>
+                    </div>
+                    
+
+            </div>
+        </div>
+<!-- 模板结束 -->
+
+    </div>
+<!-- 引入js数据 -->
+    <script type="text/javascript" src="img/data.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
